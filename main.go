@@ -138,12 +138,13 @@ func flagsFunc(cmd *cobra.Command, args []string) {
 			seq: string(sequenceCap[i][upstreamfinal:downstreamfinal]),
 		})
 	}
+	fmt.Println(
+		"These are the upstream and the downstream blocks for the chosen block including the block",
+	)
 	for i := range upstreamBlock {
-		fmt.Println(
-			"These are the upstream and the downstream blocks for the chosen block including the block",
-		)
 		fmt.Println(upstreamBlock[i].id, "\t", upstreamBlock[i].seq)
 	}
+
 	for i := 0; i < len(sequenceID); i++ {
 		upstreamS = append(upstreamS, upstreamStart{
 			id:  string(sequenceID[i]),
@@ -156,14 +157,15 @@ func flagsFunc(cmd *cobra.Command, args []string) {
 			seq: string(sequenceCap[i][end:downstreamfinal]),
 		})
 	}
+
+	fmt.Println("The upstream from the given position till the start is given below:")
 	for i := range upstreamS {
-		fmt.Println("The upstream from the given position till the start is given below:")
 		fmt.Println(upstreamS[i].id, "\t", upstreamS[i].seq)
 	}
+	fmt.Println(
+		"The downstream from the end to the given downstream coordinate is given below:",
+	)
 	for i := range downstreamS {
-		fmt.Println(
-			"The downstream from the end to the given downstream coordinate is given below:",
-		)
 		fmt.Println(downstreamS[i].id, "\t", downstreamS[i].seq)
 	}
 }

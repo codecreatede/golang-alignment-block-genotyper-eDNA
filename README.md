@@ -6,7 +6,7 @@ golang-alignment-block-genotyper
 - This is especially when you are dealing with the HybSeq data for the eDNA environmenttal DNA sequencing tags.
 
 ```
-[gauravsablok@ultramarine]~/Desktop/codecreatede/golang/golang-alignment-block-genotyper% \
+[gauravsablok@ultramarine]~/Desktop/codecreatede/golang/golang-alignment-block-genotyper-eDNA% \
 go run main.go -a ./samplefile/samplealignment.fasta -s 6 -e 10 -u 4 -d 4
 This is the alignment block that has been extracted
 >ENA|OX291461|OX291461.1         TC--
@@ -14,17 +14,13 @@ This is the alignment block that has been extracted
 >ENA|OX291509|OX291509.1         --TC
 These are the upstream and the downstream blocks for the chosen block including the block
 >ENA|OX291461|OX291461.1         ACTATC----TC
-These are the upstream and the downstream blocks for the chosen block including the block
 >ENA|OX291509|OX291509.1         TC----TC----
 The upstream from the given position till the start is given below:
 >ENA|OX291461|OX291461.1         ACTA
-The upstream from the given position till the start is given below:
 >ENA|OX291509|OX291509.1         TC--
 The downstream from the end to the given downstream coordinate is given below:
 >ENA|OX291461|OX291461.1         --TC
-The downstream from the end to the given downstream coordinate is given below:
 >ENA|OX291509|OX291509.1         ----
-
 ```
 
 - binary version 
@@ -38,15 +34,13 @@ This is the alignment block that has been extracted
 >ENA|OX291509|OX291509.1         --TC
 These are the upstream and the downstream blocks for the chosen block including the block
 >ENA|OX291461|OX291461.1         ACTATC----TC
-These are the upstream and the downstream blocks for the chosen block including the block
 >ENA|OX291509|OX291509.1         TC----TC----
 The upstream from the given position till the start is given below:
 >ENA|OX291461|OX291461.1         ACTA
-The upstream from the given position till the start is given below:
 >ENA|OX291509|OX291509.1         TC--
 The downstream from the end to the given downstream coordinate is given below:
 >ENA|OX291461|OX291461.1         --TC
-The downstream from the end to the given downstream coordinate is given below:
 >ENA|OX291509|OX291509.1         ----
+
 ```
 Gaurav Sablok
