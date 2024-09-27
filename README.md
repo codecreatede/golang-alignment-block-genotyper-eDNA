@@ -1,4 +1,4 @@
-golang-alignment-block-genotyper
+# golang-alignment-block-genotyper
 
 - etxracting the upstream and the downstream of the block alignment. 
 - extract specific regions upstream and downstream of the block alignment for genotyper tags. 
